@@ -24,4 +24,25 @@ A *Queue* is a linear data structure which follows **FIFO (First-In First-Out)**
 - `queue` - remove and return the front element.
 - `peek` - return the front element without removing it. 
 - `isEmpty` - check whether the queue is empty. 
-- `size` - return the number of elements in the queue. 
+- `size` - return the number of elements in the queue.
+
+---
+
+### Time Complexity
+| Operation | Complexity |
+|-----------|------------|
+|  enqueue  | O(1) |
+|  dequeue  | O(1) |
+|  peek     | O(1) |
+|  isEmpty  | O(1) |
+|  size     | O(1) |
+
+---
+
+### Implementation notes
+
+This implementation uses `java.util.LinkedList` internally to achieve constant-time insertion and removal at the ends of the queue. 
+
+
+
+

@@ -29,7 +29,16 @@ public class Main {
 
         System.out.println("size: " + list.size());
 
+        System.out.println("get(0): " + list.get(0)); // head
+        System.out.println("get(1): " + list.get(1));
+        System.out.println("get(2): " + list.get(2));
+        System.out.println("get(3): " + list.get(3)); // tail
 
+        try {
+            System.out.println(list.get(10));
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("error: " + e.getMessage());
+        }
 
     }
     

@@ -105,6 +105,32 @@ public class LinkedList {
 
     }
 
+    //O(n)
+    public String get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
 
-    
+        Node current = head;
+        int i = 0;
+        while (i < index) {
+            current = current.next;
+            i++;
+        }
+        return current.value;
+    }
+
+    // O(n)
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node current = head;
+        while (current != null) {
+            sb.append(current.value).append(" -> ");
+            current = current.next;
+        }
+        sb.append("null");
+        return sb.toString();
+    }
+
 }
