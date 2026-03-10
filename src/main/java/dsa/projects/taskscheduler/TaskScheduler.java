@@ -1,52 +1,49 @@
 package dsa.projects.taskscheduler;
 
-import java.util.ArrayList;
-
 public class TaskScheduler {
-    private ArrayList<Task> tasks;
+
+    private MaxHeap queue;
+    private int taskCounter;
 
     public TaskScheduler() {
-        tasks = new ArrayList<>();
+        queue = new MaxHeap();
+        taskCounter = 1;
     }
 
     public void addTask(String name, int priority) {
-        tasks.add(new Task(name, priority));
+
+        Task task = new Task(taskCounter++, name, priority);
+        queue.insert(task);
+
+        System.out.println("Task added: " + task);
     }
 
-    public void showTasks() {
-        if (tasks.isEmpty()) {
+    public void executeNextTask() {
+
+        Task task = queue.extractMax();
+
+        if (task == null) {
             System.out.println("No tasks available.");
             return;
         }
 
-        for (Task task : tasks) {
-            System.out.println(task);
-        }
+        System.out.println("Executing task: " + task);
     }
 
-    public void sortByPriority() {
-        for (int i = 0; i < tasks.size() - 1; i++) {
-            for (int j = 0; j < tasks.size() - i - 1; j++) {
-                if (tasks.get(j).getPriority() < tasks.get(j + 1).getPriority()) {
-                    Task temp = tasks.get(j);
-                    tasks.set(j, tasks.get(j + 1));
-                    tasks.set(j + 1, temp);
-                }
-            }
-        }
-    }
+    public void peekNextTask() {
 
-    public void executeTasks() {
-        if (tasks.isEmpty()) {
-            System.out.println("No tasks to execute.");
+        Task task = queue.peek();
+
+        if (task == null) {
+            System.out.println("No tasks available.");
             return;
         }
 
-        sortByPriority();
+        System.out.println("Next task: " + task);
+    }
 
-        System.out.println("Executing tasks:");
-        for (Task task : tasks) {
-            System.out.println("Executing: " + task);
-        }
+    public void showStats() {
+
+        System.out.println("Tasks remaining: " + queue.size());
     }
 }
