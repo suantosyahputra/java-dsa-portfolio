@@ -1,5 +1,17 @@
 # Java Data Structures and Algorithms Portfolio
 
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Core Data Structures](#01-core-data-structures)
+- [Algorithms](#02-algorithms)
+- [Mini Projects](#03-mini-projects)
+- [Data Structure Visualizations](#data-structure-visualizations)
+- [Complexity Analysis](#complexity-analysis)
+- [How to Run](#how-to-run)
+- [Topics Covered](#topics-covered)
+- [Purpose](#purpose)
+
 This repository contains implementations of fundamental **data structures**, **algorithms**, and **mini projects** written in Java.
 
 The goal of this project is to demonstrate understanding of core computer science concepts such as:
@@ -236,6 +248,48 @@ Route = [A, B, D]
 
 ---
 
+# Data Structure Visualizations
+
+## Binary Search Tree Example
+
+```mermaid
+graph TD
+    A[10] --> B[5]
+    A --> C[15]
+    B --> D[2]
+    B --> E[7]
+    C --> F[20]
+```
+## Max Heap (Task Scheduler Priority Queue)
+
+```mermaid
+graph TD
+    A[10] --> B[6]
+    A --> C[4]
+    B --> D[2]
+```
+## Graph Representation
+
+```mermaid
+graph LR
+A --- B
+A --- C
+B --- D
+C --- E
+E --- D
+```
+
+### BFS Route Example
+
+```mermaid
+graph LR
+A --> B
+B --> D
+```
+
+---
+
+
 # Complexity Analysis
 
 Detailed complexity analysis is available in:
@@ -280,47 +334,4 @@ This repository demonstrates knowledge of:
 # Purpose
 
 This project serves as a **data structures and algorithms learning portfolio** and reference implementation in Java.
-
-# Data Structure Visualizations
-
-## Binary Search Tree Example
-
-```mermaid
-graph TD
-    A[10] --> B[5]
-    A --> C[15]
-    B --> D[2]
-    B --> E[7]
-    C --> F[20]
-```
-## Max Heap (Task Scheduler Priority Queue)
-
-```mermaid
-graph TD
-    A[10] --> B[6]
-    A --> C[4]
-    B --> D[2]
-```
-## Graph Representation
-
-```mermaid
-graph LR
-A --- B
-A --- C
-B --- D
-C --- E
-E --- D
-```
-
-### BFS Route Example
-
-```mermaid
-graph LR
-A --> B
-B --> D
-```
-
-
-
-
 
