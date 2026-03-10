@@ -1,9 +1,7 @@
 package dsa.bst;
 
 public class Main {
-
     public static void main(String[] args) {
-
         BinarySearchTree bst = new BinarySearchTree();
 
         bst.insert(10);
@@ -13,10 +11,19 @@ public class Main {
         bst.insert(7);
         bst.insert(20);
 
-        System.out.println("contains 7? " + bst.contains(7));
-        System.out.println("contains 99? " + bst.contains(99));
+        System.out.print("inorder before delete: ");
+        bst.inorder(); // 2 5 7 10 15 20
 
-        System.out.print("inorder: ");
-        bst.inorder();
+        bst.delete(2); // leaf
+        System.out.print("after deleting 2: ");
+        bst.inorder(); // 5 7 10 15 20
+
+        bst.delete(15); // one child
+        System.out.print("after deleting 15: ");
+        bst.inorder(); // 5 7 10 20
+
+        bst.delete(10); // two children
+        System.out.print("after deleting 10: ");
+        bst.inorder(); // 5 7 20
     }
 }

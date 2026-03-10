@@ -69,5 +69,50 @@ private void inorderRecursive(Node node) {
     }
 }
 
+// O(log n) average
+public void delete(int value) {
+    root = deleteRecursive(root, value);
+}
+
+private Node deleteRecursive(Node node, int value) {
+    if (node == null) {
+        return null;
+    }
+
+    if (value < node.value) {
+        node.left = deleteRecursive(node.left, value);
+    } else if (value > node.value) {
+        node.right = deleteRecursive(node.right, value);
+    } else {
+        // case 1: no child
+        if (node.left == null && node.right == null) {
+            return null;
+        }
+
+        // case 2: one child
+        if (node.left == null) {
+            return node.right;
+        }
+
+        if (node.right == null) {
+            return node.left;
+        }
+
+        // case 3: two children
+        int minValue = findMin(node.right);
+        node.value = minValue;
+        node.right = deleteRecursive(node.right, minValue);
+    }
+
+    return node;
+}
+
+private int findMin(Node node) {
+    while (node.left != null) {
+        node = node.left;
+    }
+    return node.value;
+}
+
 }
 
