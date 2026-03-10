@@ -1,5 +1,12 @@
 # Java Data Structures and Algorithms Portfolio
 
+![Java](https://img.shields.io/badge/Language-Java-orange)
+![Algorithms](https://img.shields.io/badge/Focus-Algorithms-blue)
+![Data Structures](https://img.shields.io/badge/Focus-Data%20Structures-green)
+![DSA Portfolio](https://img.shields.io/badge/Project-DSA%20Portfolio-purple)
+![GitHub stars](https://img.shields.io/github/stars/suantosyahputra/java-dsa-portfolio)
+![Last commit](https://img.shields.io/github/last-commit/suantosyahputra/java-dsa-portfolio)
+
 ## Table of Contents
 
 - [Project Structure](#project-structure)
