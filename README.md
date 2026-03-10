@@ -2,13 +2,7 @@
 
 This repository demonstrates the level of my understanding of fundamental data structures and algorithms implemented in Java.
 
-The aim of this portfolio is to provide the academic evidence of competency which is equivalent to an undergraduate level *Data Structures and Algorithms* course, which I did not have the opportunity to formally complete during my previous studies. 
-
-This portfolio is for supporting my applications to:
-
-- KTH Royal Institute of Technology - MSc Machine Learning Program. 
-- Stockholm University - MSc Data Science, Statistics and Data Analysis. 
-- Malmö University - MSc Applied Data Science. 
+The aim of this portfolio is to provide the academic evidence of competency which is equivalent to an undergraduate level *Data Structures and Algorithms* course, which I did not have the opportunity to formally complete during my previous studies.
 
 ---
 
