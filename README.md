@@ -281,6 +281,46 @@ This repository demonstrates knowledge of:
 
 This project serves as a **data structures and algorithms learning portfolio** and reference implementation in Java.
 
+# Data Structure Visualizations
+
+## Binary Search Tree Example
+
+```mermaid
+graph TD
+    A[10] --> B[5]
+    A --> C[15]
+    B --> D[2]
+    B --> E[7]
+    C --> F[20]
+```
+## Max Heap (Task Scheduler Priority Queue)
+
+```mermaid
+graph TD
+    A[10] --> B[6]
+    A --> C[4]
+    B --> D[2]
+```
+## Graph Representation
+
+```mermaid
+graph LR
+A --- B
+A --- C
+B --- D
+C --- E
+E --- D
+```
+
+### BFS Route Example
+
+```mermaid
+graph LR
+A --> B
+B --> D
+```
+
+
 
 
 
