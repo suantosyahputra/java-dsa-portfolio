@@ -19,9 +19,13 @@ This repository is structured as a learning portfolio and a reference for classi
 java-dsa-portfolio/
 
 01-core-data-structures/
+
 02-algorithms/
+
 03-mini-projects/
+
 analysis/
+
 README.md
 
 
