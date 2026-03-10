@@ -1,0 +1,10 @@
+# Java build files
+out/
+*.class
+
+# VSCode
+.vscode/
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
